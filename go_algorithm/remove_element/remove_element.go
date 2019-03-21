@@ -16,7 +16,7 @@ import "fmt"
 // 		你不需要考虑数组中超出新长度后面的元素。
 
 // Methods: 1
-func removeElement1(nums []int, val int) int {
+func RemoveElement1(nums []int, val int) int {
 	i := 0
 	for index, item := range nums {
 		if item != val {
@@ -30,7 +30,7 @@ func removeElement1(nums []int, val int) int {
 
 // Methods: 2
 // nums = [0,1,2,2,3,0,4,2], val = 2,
-func removeElement2(nums []int, val int) int {
+func RemoveElement2(nums []int, val int) int {
 	i := 0
 	length := len(nums)
 	for {
@@ -38,7 +38,7 @@ func removeElement2(nums []int, val int) int {
 			break
 		}
 		if nums[i] == val {
-			nums[i] = nums[length - 1]
+			nums[i] = nums[length-1]
 			length--
 		} else {
 			i++
@@ -49,7 +49,7 @@ func removeElement2(nums []int, val int) int {
 }
 
 // Methods: 3
-func removeElement3(nums []int, val int) int {
+func RemoveElement3(nums []int, val int) int {
 	i := 0
 	length := len(nums)
 	for {

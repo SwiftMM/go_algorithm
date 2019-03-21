@@ -5,8 +5,8 @@ import "testing"
 func TestTwoSums(t *testing.T) {
 	nums := []int{2, 7, 11, 15}
 	target := 9
-	s := twoSum(nums, target)
-	if !equal([]int{0,1}, s) {
+	s := TwoSum(nums, target)
+	if !equal([]int{0, 1}, s) {
 		t.Error("test failed")
 	}
 }
