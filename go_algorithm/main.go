@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./single_number"
 	"./three_sums"
 	"fmt"
 )
@@ -10,5 +11,11 @@ func main() {
 	//testData2 := []int{-1, 0, 1, 1, 2, -1, -4}
 	//fmt.Println("testData: ", testData)
 	fmt.Println(three_sums.ThreeSum(testData1))
+	testSingleNumber()
+}
 
+func testSingleNumber() {
+	testData := []int{1, 2, 3, 2, 3, 1, 5}
+	res := single_number.SingleNumber(testData)
+	fmt.Println(res)
 }
