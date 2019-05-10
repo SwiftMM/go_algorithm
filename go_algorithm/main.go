@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./remove_duplicates"
 	"./single_number"
 	"./three_sums"
 	"fmt"
@@ -12,10 +13,17 @@ func main() {
 	//fmt.Println("testData: ", testData)
 	fmt.Println(three_sums.ThreeSum(testData1))
 	testSingleNumber()
+	testRemoveDuplicates()
 }
 
 func testSingleNumber() {
 	testData := []int{1, 2, 3, 2, 3, 1, 5}
 	res := single_number.SingleNumber(testData)
 	fmt.Println(res)
+}
+
+func testRemoveDuplicates() {
+	nums := []int{0, 1, 1, 1, 2, 2, 3, 3, 4}
+	res := remove_duplicates.RemoveDuplicates(nums)
+	fmt.Println("Duplicates: ", res)
 }
