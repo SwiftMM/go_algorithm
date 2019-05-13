@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./fizz_buzz"
 	"./remove_duplicates"
 	"./single_number"
 	"./three_sums"
@@ -14,6 +15,7 @@ func main() {
 	fmt.Println(three_sums.ThreeSum(testData1))
 	testSingleNumber()
 	testRemoveDuplicates()
+	testFizzBuzz()
 }
 
 func testSingleNumber() {
@@ -26,4 +28,10 @@ func testRemoveDuplicates() {
 	nums := []int{0, 1, 1, 1, 2, 2, 3, 3, 4}
 	res := remove_duplicates.RemoveDuplicates(nums)
 	fmt.Println("Duplicates: ", res)
+}
+
+func testFizzBuzz() {
+
+	res := fizz_buzz.FizzBuzz(15)
+	fmt.Println("FizzBuzz: ", res)
 }
