@@ -2,6 +2,7 @@ package main
 
 import (
 	"./fizz_buzz"
+	"./merge_sorted_array"
 	"./remove_duplicates"
 	"./single_number"
 	"./three_sums"
@@ -16,6 +17,7 @@ func main() {
 	testSingleNumber()
 	testRemoveDuplicates()
 	testFizzBuzz()
+	testMergeSortedArray()
 }
 
 func testSingleNumber() {
@@ -34,4 +36,11 @@ func testFizzBuzz() {
 
 	res := fizz_buzz.FizzBuzz(15)
 	fmt.Println("FizzBuzz: ", res)
+}
+
+func testMergeSortedArray() {
+	nums1 := []int{1, 2, 3, 0, 0, 0}
+	nums2 := []int{2, 5, 6}
+	merge_sorted_array.Merge(nums1, 3, nums2, 3)
+	fmt.Println("mergeSortedArray: ", nums1)
 }
