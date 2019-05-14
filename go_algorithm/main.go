@@ -2,6 +2,7 @@ package main
 
 import (
 	"./fizz_buzz"
+	"./max_profit"
 	"./merge_sorted_array"
 	"./remove_duplicates"
 	"./single_number"
@@ -18,6 +19,7 @@ func main() {
 	testRemoveDuplicates()
 	testFizzBuzz()
 	testMergeSortedArray()
+	testMaxProfit()
 }
 
 func testSingleNumber() {
@@ -43,4 +45,11 @@ func testMergeSortedArray() {
 	nums2 := []int{2, 5, 6}
 	merge_sorted_array.Merge(nums1, 3, nums2, 3)
 	fmt.Println("mergeSortedArray: ", nums1)
+}
+
+func testMaxProfit() {
+	nums1 := []int{7, 6, 4, 3, 1}
+	nums2 := []int{7, 1, 5, 3, 6, 4}
+	fmt.Println(max_profit.MaxProfit(nums1))
+	fmt.Println(max_profit.MaxProfit(nums2))
 }
