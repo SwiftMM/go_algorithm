@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./diamond_stones"
 	"./fizz_buzz"
 	"./max_profit"
 	"./merge_sorted_array"
@@ -20,6 +21,7 @@ func main() {
 	testFizzBuzz()
 	testMergeSortedArray()
 	testMaxProfit()
+	testDiamondAndStones()
 }
 
 func testSingleNumber() {
@@ -52,4 +54,10 @@ func testMaxProfit() {
 	nums2 := []int{7, 1, 5, 3, 6, 4}
 	fmt.Println(max_profit.MaxProfit(nums1))
 	fmt.Println(max_profit.MaxProfit(nums2))
+}
+
+func testDiamondAndStones() {
+	J := "aA"
+	S := "aAAbbbb"
+	fmt.Println(diamond_stones.NumJewelsInStones(J, S))
 }
