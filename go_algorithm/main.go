@@ -7,6 +7,7 @@ import (
 	"./merge_sorted_array"
 	"./remove_duplicates"
 	"./single_number"
+	"./sqrt"
 	"./three_sums"
 	"fmt"
 )
@@ -22,6 +23,7 @@ func main() {
 	testMergeSortedArray()
 	testMaxProfit()
 	testDiamondAndStones()
+	testMySqrt()
 }
 
 func testSingleNumber() {
@@ -60,4 +62,10 @@ func testDiamondAndStones() {
 	J := "aA"
 	S := "aAAbbbb"
 	fmt.Println(diamond_stones.NumJewelsInStones(J, S))
+}
+
+func testMySqrt() {
+	fmt.Println("testMySqrt")
+	fmt.Println(sqrt.MySqrt(8))
+	fmt.Println(sqrt.MySqrt2(8))
 }
