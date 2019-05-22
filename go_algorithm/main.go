@@ -7,6 +7,7 @@ import (
 	"./merge_sorted_array"
 	"./palindrome_number"
 	"./remove_duplicates"
+	"./reverse_string"
 	"./single_number"
 	"./sqrt"
 	"./three_sums"
@@ -26,6 +27,7 @@ func main() {
 	testDiamondAndStones()
 	testMySqrt()
 	testPalindromeNumber()
+	testReverseString()
 }
 
 func testSingleNumber() {
@@ -76,4 +78,12 @@ func testPalindromeNumber() {
 	fmt.Println("testPalindromeNumber")
 	fmt.Println("121 is palindrome number: ", palindrome_number.IsPalindrome(121))
 	fmt.Println("-121 is palindrome number: ", palindrome_number.IsPalindrome(-121))
+}
+
+func testReverseString() {
+	fmt.Println("testReverseString")
+	input := []byte{'h', 'e', 'l', 'l', 'o'}
+	fmt.Println("input: ", input)
+	reverse_string.ReverseString(input)
+	fmt.Println("output: ", input)
 }
