@@ -5,6 +5,7 @@ import (
 	"./fizz_buzz"
 	"./max_profit"
 	"./merge_sorted_array"
+	"./palindrome_number"
 	"./remove_duplicates"
 	"./single_number"
 	"./sqrt"
@@ -24,6 +25,7 @@ func main() {
 	testMaxProfit()
 	testDiamondAndStones()
 	testMySqrt()
+	testPalindromeNumber()
 }
 
 func testSingleNumber() {
@@ -68,4 +70,10 @@ func testMySqrt() {
 	fmt.Println("testMySqrt")
 	fmt.Println(sqrt.MySqrt(8))
 	fmt.Println(sqrt.MySqrt2(8))
+}
+
+func testPalindromeNumber() {
+	fmt.Println("testPalindromeNumber")
+	fmt.Println("121 is palindrome number: ", palindrome_number.IsPalindrome(121))
+	fmt.Println("-121 is palindrome number: ", palindrome_number.IsPalindrome(-121))
 }

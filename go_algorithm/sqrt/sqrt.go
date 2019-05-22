@@ -24,6 +24,7 @@ func MySqrt(x int) int {
 	return j
 }
 
+// 牛顿法
 func MySqrt2(x int) int {
 	if x <= 0 {
 		return 0
