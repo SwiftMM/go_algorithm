@@ -8,6 +8,7 @@ import (
 	"./palindrome_number"
 	"./remove_duplicates"
 	"./reverse_string"
+	"./roman_to_int"
 	"./single_number"
 	"./sqrt"
 	"./three_sums"
@@ -28,6 +29,7 @@ func main() {
 	testMySqrt()
 	testPalindromeNumber()
 	testReverseString()
+	testRomanToInt()
 }
 
 func testSingleNumber() {
@@ -86,4 +88,10 @@ func testReverseString() {
 	fmt.Println("input: ", input)
 	reverse_string.ReverseString(input)
 	fmt.Println("output: ", input)
+}
+
+func testRomanToInt() {
+	fmt.Println("testRomanToInt")
+	fmt.Println("MCMXCIV equals to ", roman_to_int.RomanToInt("MCMXCIV"))
+	fmt.Println("IV equals to ", roman_to_int.RomanToInt("IV"))
 }
